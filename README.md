@@ -47,3 +47,27 @@ Set your preferred homepage by changing links or redirecting `/` to one of `/the
 ## Notes
 - The map is an iframe to keep CSP simple. Replace with Google Maps JS if needed.
 - Forms have a honeypot anti‑spam. Add hCaptcha/Cloudflare Turnstile if bots appear.
+
+
+---
+
+## One‑click style deploys
+
+### Vercel (recommended for Next.js)
+1. Push this folder to **GitHub** (or GitLab/Bitbucket).
+2. Go to **https://vercel.com/new** → Import your repo.
+3. Vercel auto-detects Next.js. Keep defaults:
+   - Build Command: `next build`
+   - Output: `.next`
+   - Node: 18+
+4. Add **Environment Variables** (from `.env.example`):
+   - `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `LEAD_FROM`, `LEAD_TO`
+5. Deploy. (HSTS, CSP, and all headers are already configured in `next.config.mjs`.)
+
+### Netlify
+1. Push to GitHub.
+2. New Site → Import from Git → pick the repo.
+3. Build command: `npm run build`  — Publish dir: `.next`
+4. Add environment variables (same as above).
+5. Netlify auto-applies the Next.js runtime via `@netlify/plugin-nextjs`.
+
