@@ -1,4 +1,4 @@
-import ServicesGrid from '@/components/ServicesGrid'
+import ServicesGrid from '../../components/ServicesGrid'
 export default function Page() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16">

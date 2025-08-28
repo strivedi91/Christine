@@ -1,5 +1,5 @@
-import ServicesGrid from '@/components/ServicesGrid'
-import LeadForm from '@/components/LeadForm'
+import ServicesGrid from '../../../components/ServicesGrid'
+import LeadForm from '../../../components/LeadForm'
 
 export default function Page() {
   return (

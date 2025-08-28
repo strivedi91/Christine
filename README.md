@@ -71,3 +71,6 @@ Set your preferred homepage by changing links or redirecting `/` to one of `/the
 4. Add environment variables (same as above).
 5. Netlify auto-applies the Next.js runtime via `@netlify/plugin-nextjs`.
 
+
+
+**Note:** This repo is the JavaScript-only version (no TypeScript). All files are `.js`/`.jsx`.

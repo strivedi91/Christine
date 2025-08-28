@@ -5,5 +5,5 @@ export function GET() {
     'Allow: /',
     'Sitemap: https://christinesautomotive.ca/sitemap.xml'
   ].join('\n');
-  return new NextResponse(body, { headers: { 'Content-Type': 'text/plain' } });
+  return new NextResponse(body, { headers});
 }

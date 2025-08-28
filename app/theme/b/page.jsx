@@ -1,5 +1,5 @@
-import ReviewsStrip from '@/components/ReviewsStrip'
-import LeadForm from '@/components/LeadForm'
+import ReviewsStrip from '../../../components/ReviewsStrip'
+import LeadForm from '../../../components/LeadForm'
 
 export default function Page() {
   return (

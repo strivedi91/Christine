@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
 
-export default function LeadForm({ accent='emerald' }:{accent?: 'emerald'|'sky'|'amber'}) {
+export default function LeadForm({ accent='emerald' }) {
   const [status, setStatus] = useState<'idle'|'sending'|'sent'|'error'>('idle');
-  async function onSubmit(e: any) {
+  async function onSubmit(e) {
     e.preventDefault();
     setStatus('sending');
     const form = new FormData(e.currentTarget);
