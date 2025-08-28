@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function POST(req: Request) {
+export async function POST(req) {
   const form = await req.formData();
   // Basic server-side validation
   const name = String(form.get('name') || '');
